@@ -3,7 +3,7 @@ package ua.edu.ucu.apps.demo.flower;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import org.springframework.boot.autoconfigure.domain.EntityScan;
+import ua.edu.ucu.apps.demo.item.Item;
 
 import javax.persistence.*;
 
@@ -13,7 +13,7 @@ import javax.persistence.*;
 @Entity
 @Table(name = "flower")
 @NoArgsConstructor
-public class Flower {
+public class Flower extends Item{
     @Id
     @GeneratedValue
     private Integer id;
@@ -29,4 +29,16 @@ public class Flower {
     public String getColor() {
         return color.toString();
     }
+    @Override
+    public Double getPrice() {
+        return price;
+    }
+    @Override
+    public String getDescription(){
+     return "A beautiful flower";
+    }
+
+
+
+
 }
