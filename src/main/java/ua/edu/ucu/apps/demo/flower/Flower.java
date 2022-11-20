@@ -38,6 +38,13 @@ public class Flower extends Item{
      return "A beautiful flower";
     }
 
+    public Flower(Double price, FlowerColor color, FlowerType type, Double sepalLength, Integer id){
+        this.color = color;
+        this.id = id;
+        this.flowerType = type;
+        this.sepalLength = sepalLength;
+        this.price = price;
+    }
 
 
 
