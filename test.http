@@ -1,7 +1,7 @@
 GET http://localhost:8080/flower/all
 
 ###
-POST http://localhost:8080/flower/add
+POST https://fierce-sands-46486.herokuapp.com/flower/add
 Content-Type: application/json
 
 {
